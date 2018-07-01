@@ -9,7 +9,9 @@ def load_library(path)
     "get_meaning" => {}
   }
   emotes.each do |emote, data|
+    # english emoji => japanese emoji
     emotes_hash["get_emoticon"][data[0]] = data[1]
+    # japanese emoji => english explaination
     emotes_hash["get_meaning"][data[1]] = emote
   end
   emotes_hash
