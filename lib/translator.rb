@@ -20,6 +20,9 @@ end
 def get_japanese_emoticon(path, emoticon)
   # code goes here
   emotes_hash = load_library(path)
+  emotes_hash.each do |get_method, data|
+    current_emote = emotes_hash["get_emoticon"]
+  end 
 end
 
 def get_english_meaning
