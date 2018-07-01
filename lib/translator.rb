@@ -10,7 +10,7 @@ def load_library(path)
   }
   emotes.each do |emote, data|
     emotes_hash["get_emoticon"][data[0]] = emote
-    emotes_hash["get_meaning"][data[1]] = emote
+    emotes_hash["get_meaning"][emote] = data[1]
   end 
   emotes_hash
 end
