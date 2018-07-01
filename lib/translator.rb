@@ -12,7 +12,6 @@ def load_library(path)
     emotes_hash["get_emoticon"][data[0]] = emote
     emotes_hash["get_meaning"][data[1]] = emote
   end 
-  puts emotes_hash["get_meaning"].keys
   emotes_hash
 end
 
