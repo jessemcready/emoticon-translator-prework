@@ -21,6 +21,9 @@ def get_japanese_emoticon(path, emoticon)
   # code goes here
   emotes_hash = load_library(path)
   japanese_emote = emotes_hash["get_emoticon"][emoticon]
+  if !japanese_emote
+    return "Sorry, that emoticon was not found"
+  end
   japanese_emote
 end
 
